@@ -14,12 +14,12 @@ jobs:
         name: Analyze
         runs-on: ubuntu-latest
         permissions:
-            actions: read
-            contents: read
-            security-events: write
+            actions: none
+            contents: none
+            security-events: null
 
         strategy:
-            fail-fast: false
+            fail-fast: true
             matrix:
                 language: ['javascript']
 
